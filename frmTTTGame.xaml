@@ -1,0 +1,28 @@
+﻿<Window x:Class="tictactoe.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="X and Os Game">
+    <Window.Resources>
+        <SolidColorBrush x:Key="violetColor" Color="Violet"/>
+        <LinearGradientBrush x:Key="gradientViolet">
+            <GradientStop Color="Aquamarine" Offset="0"></GradientStop>
+            <GradientStop Offset=".5" Color="{DynamicResource {x:Static SystemColors.DesktopColor}}"/>
+        </LinearGradientBrush>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{DynamicResource gradientViolet}"/>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="FontSize" Value="36"></Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_New Game">
+                <MenuItem Header="3-panel" Tag="3" InputGestureText="Ctrl + 3" Click="NewGame_Click"/>
+                <MenuItem Header="5-panel" Tag="5" InputGestureText="Ctrl + 5" Click="NewGame_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnuQuit" Header="_Quit!" Click="mnuQuit_Click"/>
+        </Menu>
+        <UniformGrid x:Name="boardGrid" Button.Click="boardGrid_Click">
+        </UniformGrid>
+    </DockPanel>
+</Window>
