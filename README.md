@@ -1,5 +1,7 @@
 ###Write a program to play tic-tac-toe, with the following features:
 
+![Scereenshot](img1.png)
+
 - Menu to permit new game and to quit program; use shortcuts.
 - Automatically resize Buttons when screen size is changed by user.
 - Display the win announcement as shown.
