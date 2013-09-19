@@ -1,4 +1,4 @@
-###Write a program to play tic-tac-toe, with the following features:
+###Write program to play tic-tac-toe, with the following features:
 
 ![Screenshot](img1.png)
 
