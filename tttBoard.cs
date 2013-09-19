@@ -6,6 +6,7 @@ using System.Diagnostics;
 
 namespace tictactoe
 {
+    // A Change to tttBoard
     class tttBoard
     {
         public enum boardState {empty, x, o};
